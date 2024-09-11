@@ -19,6 +19,5 @@ def before(letter):
 def main():
     convert_height()
     before("X")
-    #print(71%(int(71/12)))
 
 main()
