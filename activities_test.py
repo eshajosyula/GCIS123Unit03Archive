@@ -11,10 +11,29 @@ def test_squared_8():
     #analyze
     assert actual == expected
 
+
 def test_cubed_2():
     x = 2
     expected = 8
 
     actual = activities.cubed(x)
+
+    assert actual == expected
+
+
+def even_or_odd20(x):
+    x = 20
+    expected = " is positive"
+
+    actual = activities.even_or_odd(x)
+
+    assert actual == expected
+
+
+def even_or_odd21(x):
+    x = 21
+    expected = " is odd"
+
+    actual = activities.even_or_odd(x)
 
     assert actual == expected
