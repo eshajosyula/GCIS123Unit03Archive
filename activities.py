@@ -50,8 +50,11 @@ def main() :
     even_or_odd(20)
     even_or_odd(21)
 
+if __name__ == "__main__":
+    main()
 
-main()
+
+#main()
 
 """
 Logical Operators
