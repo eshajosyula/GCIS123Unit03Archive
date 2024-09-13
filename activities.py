@@ -33,13 +33,22 @@ def opps():
     print( c <= d )
     print( b < c )
 
+def even_or_odd(n):
+    if n % 2 == 0:
+        print(n, " is positive", sep="")
+    else:
+        print(n, " is odd", sep="")
+
+
 def main() :
     #x = int(input("Enter a value for x: "))
     #res1 = squared(x)
     #res2 = cubed(x)
     #print(res1)
     #print(res2)
-    opps()
+    #opps()
+    even_or_odd(20)
+    even_or_odd(21)
 
 
 main()
@@ -74,3 +83,6 @@ Relational Operators
 12. Error
 
 """
+
+#   =====================================
+
