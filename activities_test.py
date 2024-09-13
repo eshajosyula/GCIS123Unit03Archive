@@ -10,3 +10,11 @@ def test_squared_8():
 
     #analyze
     assert actual == expected
+
+def test_cubed_2():
+    x = 2
+    expected = 8
+
+    actual = activities.cubed(x)
+
+    assert actual == expected
