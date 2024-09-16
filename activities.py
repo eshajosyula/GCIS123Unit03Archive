@@ -1,4 +1,6 @@
+## imports
 import math
+import random
 
 def squared(x) : 
     return math.pow(x, 2)
@@ -40,22 +42,6 @@ def even_or_odd(n):
         print(n, " is odd", sep="")
 
 
-def main() :
-    #x = int(input("Enter a value for x: "))
-    #res1 = squared(x)
-    #res2 = cubed(x)
-    #print(res1)
-    #print(res2)
-    #opps()
-    even_or_odd(20)
-    even_or_odd(21)
-
-if __name__ == "__main__":
-    main()
-
-
-#main()
-
 """
 Logical Operators
 
@@ -88,4 +74,33 @@ Relational Operators
 """
 
 #   =====================================
+
+def coin_toss():
+    x = random.randint(1, 2)
+
+    if x == 1:
+        return "heads"
+    else:
+        return "tails"
+    
+
+def main() :
+    #x = int(input("Enter a value for x: "))
+    #res1 = squared(x)
+    #res2 = cubed(x)
+    #print(res1)
+    #print(res2)
+    #opps()
+    #even_or_odd(20)
+    #even_or_odd(21)
+    print("1: ", coin_toss(), "\n",
+          "2: ", coin_toss(), "\n",
+          "3: ", coin_toss(), "\n",
+          "4: ", coin_toss(), "\n",
+          "5: ", coin_toss(), "\n",
+          sep="")
+
+
+if __name__ == "__main__":
+    main()
 
