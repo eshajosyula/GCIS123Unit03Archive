@@ -52,3 +52,15 @@ def test_hypotenuse_435():
     #analyze
     assert actual == expected
 
+def test_coin_toss_heads():
+    # setup
+    expected = "heads"
+
+    #invoke
+    actual = activities.coin_toss()
+
+    #analyze
+    assert actual == expected
+
+
+
