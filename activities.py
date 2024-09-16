@@ -76,6 +76,9 @@ Relational Operators
 #   =====================================
 
 def coin_toss():
+
+    random.seed(1)
+    
     x = random.randint(1, 2)
 
     if x == 1:
@@ -96,20 +99,21 @@ def main() :
     #even_or_odd(20)
     #even_or_odd(21)
 
-    """print("1: ", coin_toss(), "\n",
+    print("1: ", coin_toss(), "\n",
           "2: ", coin_toss(), "\n",
           "3: ", coin_toss(), "\n",
           "4: ", coin_toss(), "\n",
           "5: ", coin_toss(), "\n",
           sep="")
-    """
+    
 
-    random.seed(1)
+    """random.seed(1)
     x = random.randint(1, 100)
     y = random.randrange(1, 100)
     z = random.random()
 
     print(x, y, z)
+    """
 
 
 
