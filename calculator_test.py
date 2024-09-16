@@ -35,3 +35,27 @@ def test_multiply_39():
 
     # analyze
     assert actual == expected
+
+def test_divide_NaN():
+    # setup
+    x = 3
+    y = 0
+    expected = "3/0=NaN"
+
+    # invoke
+    actual = calculator.divide(x, y)
+
+    # analyze
+    assert actual == expected
+
+def test_divide_126():
+    # setup
+    x = 12
+    y = 6
+    expected = "12/6=2.0"
+
+    # invoke
+    actual = calculator.divide(x, y)
+
+    # analyze
+    assert actual == expected
