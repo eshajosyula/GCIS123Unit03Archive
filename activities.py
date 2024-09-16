@@ -95,6 +95,11 @@ def circum(r):
 def areacirc(r):
     area = PI * r ** 2
     return area
+
+"""def testing(x, y):
+    ans = x + y
+    print = 
+    return x, "+", y, "=", ans"""
     
 
 def main() :
@@ -126,6 +131,8 @@ def main() :
     area = areacirc(4)
     print(circ)
     print(area)
+
+    print(testing(2, 3))
 
 
 
