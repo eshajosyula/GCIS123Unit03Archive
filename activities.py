@@ -78,7 +78,7 @@ Relational Operators
 def coin_toss():
 
     random.seed(1)
-    
+
     x = random.randint(1, 2)
 
     if x == 1:
@@ -86,7 +86,15 @@ def coin_toss():
     else:
         return "tails"
     
+PI = 3.14159
 
+def circum(r):
+    circ = 2 * PI * r
+    return circ
+
+def areacirc(r):
+    area = PI * r ** 2
+    return area
     
 
 def main() :
@@ -99,7 +107,7 @@ def main() :
     #even_or_odd(20)
     #even_or_odd(21)
 
-    print("1: ", coin_toss(), "\n",
+    """print("1: ", coin_toss(), "\n",
           "2: ", coin_toss(), "\n",
           "3: ", coin_toss(), "\n",
           "4: ", coin_toss(), "\n",
@@ -107,16 +115,27 @@ def main() :
           sep="")
     
 
-    """random.seed(1)
+    random.seed(1)
     x = random.randint(1, 100)
     y = random.randrange(1, 100)
     z = random.random()
 
     print(x, y, z)
     """
+    circ = circum(2)
+    area = areacirc(4)
+    print(circ)
+    print(area)
+
+
 
 
 
 if __name__ == "__main__":
     main()
 
+"""The most common errors that I've ran into were regarding typecasting - 
+a certain function takes an int vs a float, or vice versa, or a float can't be converted into an int. 
+These are an easy fix because I would just need to change the type of variable that I am implementing.
+Syntax errors are also pretty common because I am used to Java and might use %% instead of % or forget to use : 
+in a conditional and might use {} instead."""
