@@ -37,3 +37,18 @@ def even_or_odd21(x):
     actual = activities.even_or_odd(x)
 
     assert actual == expected
+
+##did this last class
+
+def test_hypotenuse_435():
+    # setup
+    adj = 3
+    opp = 4
+    expected = 5.0
+
+    #invoke
+    actual = activities.hypotenuse(adj, opp)
+
+    #analyze
+    assert actual == expected
+
