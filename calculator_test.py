@@ -23,3 +23,15 @@ def test_subtract_217():
 
     # analyze
     assert actual == expected
+
+def test_multiply_39():
+    # setup
+    x = 3
+    y = 9
+    expected = "3*9=27"
+
+    # invoke
+    actual = calculator.multiply(x, y)
+
+    # analyze
+    assert actual == expected
