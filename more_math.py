@@ -18,5 +18,7 @@ def trunk(num):
 def main():
     x = int(input("input a number: "))
     print(fact(x), "\n", root(x), "\n", trunk(x), sep = "")
+    #print(trunk(x))
 
-main()
+if __name__ == "__main__":
+    main()
