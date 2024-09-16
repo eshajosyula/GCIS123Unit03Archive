@@ -59,3 +59,15 @@ def test_divide_126():
 
     # analyze
     assert actual == expected
+
+def test_divide_52():
+    # setup
+    x = 5
+    y = 2
+    expected = "5^2=25.0"
+
+    # invoke
+    actual = calculator.exponent(x, y)
+
+    # analyze
+    assert actual == expected
