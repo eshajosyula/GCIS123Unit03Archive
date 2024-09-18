@@ -21,6 +21,11 @@ def check_guess(secret, guess):
 
 
 def main():
-    check_guess(18, 48)
+    secret = secret_number()
+    player_guess = int(input("enter a number: "))
+    result = check_guess(secret, player_guess)
 
-main()
+    print(result)
+
+if __name__ == "__main__":
+    main()

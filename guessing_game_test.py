@@ -14,6 +14,18 @@ def test_check_guess_too_low():
     secret = 18
     guess = 48
 
-    result = guessinggame.check_guess(secret, guess)
+    result = guessinggame.check_guess(secret, guess) == "too low"
+
+def test_check_guess_too_high():
+    secret = 58
+    guess = 48
+
+    result = guessinggame.check_guess(secret, guess) == "too high"
+
+def test_check_guess_correct():
+    secret = 48
+    guess = 48
+
+    result = guessinggame.check_guess(secret, guess) == "correct"
 
     
